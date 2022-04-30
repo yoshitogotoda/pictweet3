@@ -3,7 +3,5 @@
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
 <div class="contents row">
-  <% @tweets.each do |tweet| %>
-    <%= render partial: "tweet",locals: {tweet: tweet} %>
-  <% end %>
+  <%= tweet_lists(@tweets) %>
 </div>
